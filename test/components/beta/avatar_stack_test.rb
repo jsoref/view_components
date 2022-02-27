@@ -50,7 +50,7 @@ class PrimerAvatarStackTest < Minitest::Test
     end
 
     assert_selector(".AvatarStack") do
-      refute_selector(".toltipped")
+      refute_selector(".tooltipped")
       assert_selector(".AvatarStack-body") do
         assert_selector("img.avatar", count: 1)
       end
@@ -75,7 +75,7 @@ class PrimerAvatarStackTest < Minitest::Test
     end
 
     assert_selector(".AvatarStack.AvatarStack--right") do
-      refute_selector(".toltipped")
+      refute_selector(".tooltipped")
       assert_selector(".AvatarStack-body") do
         assert_selector("img.avatar", count: 1)
       end
